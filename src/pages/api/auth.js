@@ -1,5 +1,6 @@
 import { AuthorizationCode } from 'simple-oauth2';
 import { config } from '../../../lib/config';
+import { scopes } from '../../../lib/scopes';
 
 export default async (req, res) => {
   const { host } = req.headers;
@@ -13,6 +14,7 @@ export default async (req, res) => {
   const tokenParams = {
     code,
     redirect_uri: `https://${host}/api/callback?provider=${provider}`,
+    scope: scopes[provider],
   };
   try {
     // try to create an access token from the client
