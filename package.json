@@ -38,7 +38,8 @@
     "react-markdown": "7.1.0",
     "remark-gfm": "3.0.1",
     "sass": "1.43.4",
-    "webpack": "5.64.0"
+    "webpack": "5.64.0",
+    "webpack-runtime-compiler": "0.0.2"
   },
   "devDependencies": {
     "@commitlint/cli": "13.2.1",
