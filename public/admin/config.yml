@@ -1,13 +1,9 @@
 backend:
-  # name: gitlab # our repository provider
-  # repo: wwwest.solution/sellcar.online
-  # branch: main # the main branch of our repo
-  # base_url: "https://avo-web.vercel.app/" # our site's base URL 
-  # auth_endpoint: "api/auth" # used together with base_url for our custom endpoints (more on this later)
   name: github
   repo: oleh-domshynskyi/sellcar.online
   branch: main # Branch to update
   base_url: https://sellcar-online.vercel.app/
+  auth_endpoint: "api/auth"
 media_folder: public/cms/
 public_folder: "/cms/"
 publish_mode: simple
