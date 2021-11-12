@@ -2,7 +2,7 @@ backend:
   name: github
   repo: oleh-domshynskyi/sellcar.online
   branch: main # Branch to update
-  base_url: https://sellcar-online.vercel.app/
+  base_url: "https://sellcar-online.vercel.app/"
   auth_endpoint: "api/auth"
 media_folder: public/cms/
 public_folder: "/cms/"
