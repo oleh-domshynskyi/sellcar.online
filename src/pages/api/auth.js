@@ -1,5 +1,6 @@
 import { AuthorizationCode } from 'simple-oauth2';
 import { config } from '../../../lib/config';
+import { scopes } from '../../../lib/scopes';
 
 export default async (req, res) => {
   const { host } = req.headers;
@@ -10,6 +11,17 @@ export default async (req, res) => {
   // we recreate the client we used to make the request
   const client = new AuthorizationCode(config(provider));
   // create our token object
+  const authorizationUri = client.authorizeURL({
+    // your callback url is important! More on this later
+    redirect_uri: `https://${host}/api/callback?provider=${provider}`,
+    scope: scopes[provider],
+    state: randomString(),
+  });
+
+  // and get redirected to Github for authorisation
+  res.writeHead(301, { Location: authorizationUri });
+  res.end();
+
   const tokenParams = {
     code,
     redirect_uri: `https://${host}/api/callback?provider=${provider}`,
