@@ -1,0 +1,147 @@
+backend:
+  name: github
+  repo: oleh-domshynskyi/sellcar.online
+  branch: main # Branch to update
+  base_url: "https://sellcar-online.vercel.app/"
+  auth_endpoint: "api/auth"
+media_folder: public/cms/
+public_folder: "/cms/"
+publish_mode: simple
+i18n:
+  structure: multiple_folders
+  locales: [en, de, fr, it]
+  default_locale: en
+slug:
+  encoding: 'ascii'
+  clean_accents: true
+  sanitize_replacement: '_'
+collections:
+  - name: 'pages'
+    label: 'Pages'
+    create: true
+    i18n:
+      structure: single_file
+      locales: [en, de, fr, it]
+    files:
+      - label: 'Home'
+        name: 'home'
+        create: true
+        i18n: true
+        file: 'public/home.json'
+        fields:
+          - {label: "title", name: "title", widget: "string", i18n: true}
+          - {label: "subtitle", name: "subtitle", widget: "string", i18n: true}
+          - {label: "banner image", name: "bannerImg", widget: "image"}
+      - label: 'Privacy'
+        name: 'privacy'
+        create: true
+        i18n: true
+        file: 'public/privacy.json'
+        fields:
+          - {label: "title", name: "title", widget: "string", i18n: true}
+          - {label: "content", name: "content", widget: "markdown", i18n: true}
+      - label: 'Imprint'
+        name: 'imprint'
+        create: true
+        i18n: true
+        file: 'public/imprint.json'
+        fields:
+          - {label: "title", name: "title", widget: "string", i18n: true}
+          - {label: "content", name: "content", widget: "markdown", i18n: true}
+      - label: 'About us'
+        name: 'aboutUs'
+        create: true
+        i18n: true
+        file: 'public/aboutUs.json'
+        fields:
+          - {label: "title", name: "title", widget: "string", i18n: true}
+          - {label: "subtitle", name: "subtitle", widget: "string", i18n: true}
+          - {label: "banner image", name: "bannerImg", widget: "image", i18n: "duplicate"}
+          - {label: 'content', name: 'content', widget: 'markdown', i18n: true}
+  - name: "sections"
+    label: "Sections"
+    create: true
+    i18n:
+      structure: single_file
+      locales: [en, de, fr, it]
+    files:
+      - label: "Faq"
+        name: "faq"
+        create: true
+        i18n: true
+        file: 'public/sections/faq.json'
+        fields:
+          - {label: 'title', name: 'title', widget: 'string', i18n: true}
+          - {label: 'accordions', name: 'accordions', widget: 'list', create: true, i18n: true, fields: [
+            {label: 'title', name: 'title', widget: 'string', create: true, i18n: true},
+            {label: 'description', name: 'description', widget: 'string', create: true, i18n: true}]}
+      - label: 'Partners'
+        name: 'partners'
+        create: true
+        i18n: true
+        file: 'public/sections/partners.json'
+        fields:
+          - {label: 'title', name: 'title', widget: 'string', i18n: true}
+          - {label: 'images', name: 'images', widget: "list", allow_add: true, fields: [
+            {label: 'name', name: 'name', widget: 'string'},
+            {label: 'image', name: 'img', widget: 'image'}]}
+      - label: 'Steps'
+        name: 'steps'
+        create: true
+        i18n: true
+        file: 'public/sections/steps.json'
+        fields:
+          - {label: 'title', name: 'title', widget: 'markdown', i18n: true}
+          - {label: 'steps', name: 'steps', widget: 'list', create: true, i18n: true, fields: [
+            {label: 'title', name: 'title', widget: 'string', i18n: true, create: true},
+            {label: 'description', name: 'description', widget: 'string', i18n: true, create: true},
+            {label: 'image', name: 'image', widget: 'image', create: true}]}
+      - label: 'Benefits'
+        name: 'benefits'
+        create: true
+        i18n: true
+        file: 'public/sections/benefits.json'
+        fields:
+          - {label: 'benefits', name: 'benefits', widget: 'list', i18n: true, create: true, fields: [
+            {label: 'title', name: 'title', widget: 'string', create: true, i18n: true},
+            {label: 'image', name: 'image', widget: 'image', create: true}]}
+      - label: 'Footer'
+        name: 'footer'
+        create: true
+        i18n: true
+        file: 'public/sections/footer.json'
+        fields:
+          - {label: "content", name: "content", widget: "markdown", i18n: true}
+          - {label: "navigation", name: "navigation", widget: "list", i18n: true, fields: [
+            {label: 'title', name: 'title', widget: 'string', create: true, i18n: true},
+            {label: 'url', name: 'url', widget: 'string', create: true, i18n: "duplicate"}]}
+  - name: "settings"
+    label: "Settings"
+    create: true
+    i18n:
+      structure: single_file
+      locales: [en, de, fr, it]
+    files:
+      - label: "settings"
+        name: "settings"
+        create: true
+        i18n: true
+        file: 'public/settings/settings.json'
+        fields:
+          - {label: 'button title', name: 'buttonTitle', widget: 'string', i18n: true}
+          - {label: 'button subtitle', name: 'buttonSubtitle', widget: 'string', i18n: true}
+          - {label: 'step title', name: 'stepTitle', widget: 'string', i18n: true}
+          - {label: 'partner title', name: 'partnerTitle', widget: 'string', i18n: true}
+  - name: "helpPages" 
+    label: "Help Pages" 
+    folder: "public/helpPages/" 
+    create: true
+    i18n:
+      structure: single_file
+      locales: [en, de, fr, it]
+    slug: "{{title}}"
+    extension: "json"
+    format: "json"
+    fields:
+        - {label: "Title", name: "title", widget: "string", i18n: true}
+        - {label: "content", name: "content", widget: "markdown", i18n: true}
