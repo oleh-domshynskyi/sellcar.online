@@ -6,11 +6,23 @@ import ContentLayout from '@/containers/contentLayout/index';
 export async function getServerSideProps(context: any) {
   const { slug } = context.query;
   const { locale } = context;
-  const data = await import(`@/public/helpPages/${slug}.json`);
+  let data = null;
+
+  try {
+    data = await import(`@/public/helpPages/${slug}.json`);
+  } catch (error) {
+    return {
+      redirect: {
+        destination: `/`,
+      },
+    };
+  }
 
   if (!data) {
     return {
-      notFound: true,
+      redirect: {
+        destination: `/`,
+      },
     };
   }
 
