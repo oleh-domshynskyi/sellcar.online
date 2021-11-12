@@ -1,0 +1,94 @@
+@import './colors';
+
+.content {
+    h1, h2, h3, h4, h5, h6 {
+        text-align: center;
+    }
+}
+
+.banner {
+    padding: 340px 0 0px;
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: 268px 281px;
+    margin-bottom: 36px;
+    position: relative;
+    display: flex;
+
+    @media screen and (min-width: 768px){
+        padding: 60px 0 90px;
+        background-size: 350px;
+    }
+    @media screen and (min-width: 992px){
+        background-size: 500px;
+        padding: 150px 0 90px;
+    }
+    @media screen and (min-width: 1200px){
+        background-size: contain;
+        padding: 166px 0 90px;
+    }
+    @media screen and (min-width: 1400px){
+        padding: 166px 0 300px;
+        margin-bottom: 56px;
+    }
+}
+
+.title {
+    color: $primary;
+    margin-bottom: 20px !important;
+
+    @media (min-width: 768px) {
+        margin-bottom: 30px !important;
+    }
+
+    @media (min-width: 992px) {
+        margin-bottom: 40px !important;
+    }
+
+    @media (min-width: 1200px) {
+        margin-bottom: 50px !important;
+    }
+}
+
+.circleRedRight {
+    position: absolute;
+    right: -17px;
+    bottom: 60%;
+    @media screen and (min-width: 440px){
+        bottom: 55%;
+    }
+    @media screen and (min-width: 768px){
+        bottom: 166px;  
+    }
+    @media screen and (min-width: 992px){
+        right: 40px;
+    }
+}
+
+.circleRedLeft {
+    position: absolute;
+    left: 87px;
+    bottom: 90px;
+    display: none;
+
+    @media screen and (min-width: 1200px){
+        display: block;
+        bottom: 0px;
+    }
+}
+
+.circleBlue {
+    position: absolute;
+    right: 256px;
+    top: 70px;
+    @media screen and (min-width: 440px){
+        right: 326px;
+        top: 103px;
+    }
+    @media screen and (min-width: 992px){
+        right: 430px;
+    }
+    @media screen and (min-width: 1200px){
+        right: 576px;
+    }
+}

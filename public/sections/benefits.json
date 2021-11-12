@@ -1,0 +1,42 @@
+{
+  "en": {
+    "benefits": [
+      {
+        "title": "Receive price online",
+        "image": "/cms/price.svg"
+      },
+      {
+        "title": "No stress - all from home",
+        "image": "/cms/house-icon.svg"
+      },
+      {
+        "title": "Concrete offer in 24 hours",
+        "image": "/cms/hours-icon.svg"
+      }
+    ]
+  },
+  "de": {
+    "benefits": [
+      {
+        "title": "titleDe",
+        "image": "/cms/house-icon.svg"
+      }
+    ]
+  },
+  "fr": {
+    "benefits": [
+      {
+        "title": "titleFr",
+        "image": "/cms/price.svg"
+      }
+    ]
+  },
+  "it": {
+    "benefits": [
+      {
+        "title": "titleIt",
+        "image": "/cms/hours-icon.svg"
+      }
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "en": {
+    "title": "Frequently asked questions about trade-in",
+    "accordions": [
+      {
+        "title": "How is the value of my vehicle determined?",
+        "description": "We compare the data you provide with real-time data on the vehicle market. Based on this, we show you an initial price range. Once you have sent us all the information, we will send you a concrete offer within 24 hours."
+      },
+      {
+        "description": "We compare the data you provide with real-time data on the vehicle market. Based on this, we show you an initial price range. Once you have sent us all the information, we will send you a concrete offer within 24 hours.",
+        "title": "How does the trade-in work when I buy a new vehicle from sellcar.online?"
+      }
+    ]
+  },
+  "de": {
+    "title": "titleDe",
+    "accordions": [
+      {
+        "title": "titleDe",
+        "description": "descriptionDe"
+      }
+    ]
+  },
+  "fr": {
+    "title": "titleFr",
+    "accordions": [
+      {
+        "title": "titleFr",
+        "description": "descriptionFr"
+      }
+    ]
+  },
+  "it": {
+    "title": "titleIt",
+    "accordions": [
+      {
+        "title": "titleIt",
+        "description": "descriptionIt"
+      }
+    ]
+  }
+}

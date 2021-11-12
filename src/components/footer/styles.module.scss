@@ -1,0 +1,110 @@
+@import '@/styles/colors';
+
+
+@mixin footer-hover{
+    &:hover{
+      color: #fff;
+      transition: color .2s ease-in-out;
+    }
+}
+
+.footer{
+    
+  padding-top: 88px;
+  padding-bottom: 36px;
+  background-color: rgb(8, 36, 51);
+  color: $greyLight;
+
+  &__link{
+      margin-bottom: 35px;
+      display: inline-block;   
+  }
+
+  &__menu{
+    position: relative;
+    top: -5px;
+    padding-left: 0;
+    li{
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 36px;
+      transition: color .2s ease-in-out;
+      margin-top: 5px;
+
+      @include footer-hover();
+    }
+  }
+
+  
+
+
+  &__info{
+    padding-left: 0;
+    margin-top: 27px;
+    padding-top: 0;
+    padding-bottom: 0;
+    color: $greyLight;
+    
+    p{
+      font-size: 16px;
+      line-height: 27px;
+      font-weight: 400;
+      margin-bottom: 0px;
+      color: $greyLight;
+      a{
+        margin-left: 5px;
+        text-decoration: none;
+        color: $greyLight;
+        transition: color .2s ease-in-out;
+
+        @include footer-hover();
+      }
+    }
+    
+  }
+
+  @media screen and (min-width: 1400px){
+    &__info{
+      padding-left: 30px;
+    }
+  }
+  @media screen and (min-width: 1200px){
+    &__link{
+      margin-bottom: 0px;
+    }
+
+    &__info{
+      margin-top: 0px;
+    }
+  }
+
+  @media screen and (min-width: 576px){
+      padding: 115px 0 68px 0;
+    &__link{
+      a{
+        font-size: 22px;
+      }
+    }
+
+    &__menu{
+
+      a{
+        font-size: 18px;
+      }
+      
+    }
+
+
+    &__info{
+      
+      p{
+        font-size: 18px !important;
+        line-height: 27px !important;
+        a{
+          font-size: inherit !important;
+        }
+      }
+      
+    }
+  }
+}

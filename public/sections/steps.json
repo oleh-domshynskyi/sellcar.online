@@ -1,0 +1,52 @@
+{
+  "en": {
+    "steps": [
+      {
+        "title": "Free and non-binding vehicle evaluation",
+        "description": "In the first step, provide us with the data on your current vehicle. We provide you with our tried and tested form (click on Start vehicle valuation). You will receive a first rough vehicle valuation after just a few minutes.",
+        "image": "/cms/first-step.png"
+      },
+      {
+        "title": "Concrete offer received",
+        "description": "In the second step, you answer a few detailed questions about the condition of your vehicle and upload photos. You can also upload the photos conveniently with your smartphone. We will guide you and show you which photos we need. After that, we will send you a concrete purchase offer within 24 hours.",
+        "image": "/cms/second-step.png"
+      },
+      {
+        "title": "Hand over car and receive money",
+        "description": "The trade-in and handover of the vehicle then takes place conveniently upon delivery of your new vehicle. If you wish home delivery, the exchange will take place directly at your doorstep.",
+        "image": "/cms/third-step.png"
+      }
+    ],
+    "title": "## Just **three** steps to online trade-in"
+  },
+  "de": {
+    "steps": [
+      {
+        "title": "titleDe",
+        "description": "descriptionDe",
+        "image": "/cms/first-step.png"
+      }
+    ],
+    "title": "titleDe **number**"
+  },
+  "fr": {
+    "steps": [
+      {
+        "title": "titleFr",
+        "description": "DescriptionFr",
+        "image": "/cms/second-step.png"
+      }
+    ],
+    "title": "titleFr **number**"
+  },
+  "it": {
+    "steps": [
+      {
+        "title": "titleIt",
+        "description": "descriptioIt",
+        "image": "/cms/third-step.png"
+      }
+    ],
+    "title": "titleIt **number**"
+  }
+}

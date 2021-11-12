@@ -1,0 +1,18 @@
+{
+  "en": {
+    "title": "title",
+    "content": "# title"
+  },
+  "de": {
+    "title": "titleDe",
+    "content": "# contentDe"
+  },
+  "fr": {
+    "title": "titleFr",
+    "content": "# contentFr"
+  },
+  "it": {
+    "title": "titleIt",
+    "content": "# contentFr"
+  }
+}

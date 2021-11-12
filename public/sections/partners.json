@@ -1,0 +1,24 @@
+{
+  "en": {
+    "title": "Official partner of",
+    "images": [
+      {
+        "name": "tesla",
+        "img": "/cms/tesla.svg"
+      },
+      {
+        "name": "genesis",
+        "img": "/cms/genesis.svg"
+      }
+    ]
+  },
+  "de": {
+    "title": "titleDe"
+  },
+  "fr": {
+    "title": "titleFr"
+  },
+  "it": {
+    "title": "titleIt"
+  }
+}

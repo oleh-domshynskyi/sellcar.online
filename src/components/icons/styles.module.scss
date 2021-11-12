@@ -1,0 +1,42 @@
+@import '@/styles/colors';
+.icons{
+    padding: 90px 0 113px 0;
+
+    &--row{
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__item{
+        margin-bottom: 77px;
+        span{
+            display: block !important;
+            margin: 0 auto !important;
+        }
+        .item__par{
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 27px;
+            text-align: center;
+            color: $greyDark;
+            margin-top: 30px;
+        }
+       
+    }
+}
+
+
+@media screen and (min-width: 768px){
+    .icons__item{
+        margin-bottom: 0;
+        .item__par{
+            font-weight: 600;
+            font-size: 24px !important;
+            line-height: 36px !important;
+            text-align: center;
+            color: $greyDark;
+            margin-top: 40px;
+        }
+       
+    }
+}

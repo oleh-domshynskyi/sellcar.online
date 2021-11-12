@@ -1,0 +1,16 @@
+.logo {
+    max-height: 14px;
+
+    img {
+        max-height: 14px;
+    }
+
+    @media (min-width: 992px) {
+        max-height: 18px;
+
+        img {
+            max-height: 18px;
+        }
+    }
+   
+}

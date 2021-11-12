@@ -1,0 +1,26 @@
+{
+    "en": {
+       "buttonTitle": "Start Vehicle Evaluation",
+       "buttonSubtitle": "Without providing personal data",
+       "stepTitle": "Step",
+       "partnerTitle": "Official partner of"
+    },
+    "de": {
+        "buttonTitle": "buttonTitleDe",
+        "buttonSubtitle": "buttonSubtitleDe",
+        "stepTitle": "stepDe",
+        "partnerTitle": "partnerTitleDe"
+    },
+    "fr": {
+        "buttonTitle": "buttonTitleFr",
+        "buttonSubtitle": "buttonSubtitleFr",
+        "stepTitle": "stepFr",
+        "partnerTitle": "partnerTitleFr"
+    },
+    "it": {
+        "buttonTitle": "buttonTitleIt",
+        "buttonSubtitle": "buttonSubtitleIt",
+        "stepTitle": "stepIt",
+        "partnerTitle": "partnerTitleIt"
+    }
+}

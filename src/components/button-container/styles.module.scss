@@ -1,0 +1,32 @@
+@import '@/styles/colors';
+
+.button--container{
+    display: inline-block;
+    a{
+        display: inline-block;
+        background-color: $accent;
+        padding: 15px 42px 15px 42px;
+        border-radius: 29px;
+        font-size: 18px;
+        line-height: 27px;
+        text-align: center;
+        color: #fff;
+        font-weight: 700;
+        margin-bottom: 16px;
+        transition: background-color .2s ease-in-out;
+
+        &:hover{
+            background-color: $greyDark;
+            transition: background-color .2s ease-in-out;
+        }
+    }
+    .btn__par{
+        display: block;
+        text-align: center !important;
+        color: $greyDark !important;
+        line-height: 21px !important;
+        font-size: 14px !important;
+        font-weight: 400 !important;
+        width: unset !important;
+    }
+}

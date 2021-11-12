@@ -1,0 +1,20 @@
+@import './colors';
+
+.circle {
+    width: 34px;
+    height: 34px;
+    border-radius: 34px;
+    transition: transform .1s linear;
+}
+
+.circle--blue {
+    border: 8px solid $primary;
+    box-shadow: 0px 10px 20px rgba(29, 124, 177, 0.4), inset 0px 5px 20px rgba(29, 124, 177, 0.3);
+    background-color: transparent;
+}
+
+.circle--red {
+    border: 8px solid $accent;
+    box-shadow: 0px 10px 20px rgba(227, 72, 14, 0.4), inset 0px 5px 20px rgba(227, 72, 14, 0.3);
+    background-color: transparent;
+}

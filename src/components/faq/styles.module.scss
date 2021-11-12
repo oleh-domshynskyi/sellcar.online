@@ -1,0 +1,124 @@
+@import '@/styles/colors';
+
+.faq{
+    padding-bottom: 88px;
+    position: relative;
+    &::before{
+        display: none;
+        content: url(/images/faq-arch.svg);
+        position: absolute;
+        z-index: -1;
+        top: 130px;
+    }
+
+    @media screen and (min-width: 992px){
+        &::before{
+            display: block;
+        }
+    }
+}
+
+
+
+.faq--btn{
+    text-align: center;
+    margin-top: 60px;
+    @media screen and (min-width: 768px){
+        margin-top: 130px;
+    }
+}
+.container--faq{
+    overflow: hidden;
+
+}
+@media screen and (min-width: 768px){
+    .container--faq{
+        max-width: 728px !important;
+    }
+}
+
+
+.accordion {
+    width: 100%;
+
+    overflow: hidden;
+    border-bottom: 1px solid $greyLight;
+    input{
+        position: absolute;
+        opacity: 0;
+        z-index: -1;
+    }
+    label {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 13px;
+        padding-top: 16px;
+        cursor: pointer;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 700;
+        transition: all .3s ease-in-out;
+        color: $primary;
+        &:hover{
+            color: $accent;
+        }
+        &::after{
+            content: "";
+            display: block;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 9px 9px 0 9px;
+            border-color: #e3470e transparent transparent transparent;
+            transition: all .3s ease-in-out;
+            margin-left: 10px;
+        }
+        @media screen and (min-width: 576px){
+            padding-bottom: 20px;
+            padding-top: 20px;
+            font-size: 18px;
+            line-height: 29px;
+
+        }
+    }
+    &__content {
+        max-height: 0px;
+
+        color: $greyDark;
+        transition: all .3s ease-in-out;
+        font-size: 16px !important;
+        line-height: 24px !important;
+        width: 83%;
+        transition: all .3s ease-in-out;
+        
+
+        @media screen and (min-width: 576px){
+            font-size: 18px !important;
+            line-height: 27px !important;
+        }
+    }
+
+    input:checked {
+        + label {
+            
+            color: $accent;
+            
+            &::after {
+                border-color: $greyLight transparent transparent transparent;
+                transform: rotate(180deg);
+            }
+    
+        }
+        ~ .accordion__content {
+            max-height: 100vh;
+            
+            transition: all .3s ease-in-out;
+            padding-bottom: 20px;
+            
+        }
+    }
+}
+
+
+

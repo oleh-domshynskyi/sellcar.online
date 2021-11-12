@@ -1,0 +1,46 @@
+{
+  "en": {
+    "content": "Betti 73\\\nCH-8856 Tuggen\\\nTelephone +41 (0)55 533 40 00\\\nE-Mail info@carauktion.ch",
+    "navigation": [
+      {
+        "title": "About us",
+        "url": "/about"
+      },
+      {
+        "title": "Privacy",
+        "url": "/privacy"
+      },
+      {
+        "title": "Imprint",
+        "url": "/imprint"
+      }
+    ]
+  },
+  "de": {
+    "content": "contentDe",
+    "navigation": [
+      {
+        "title": "About us",
+        "url": "/about"
+      }
+    ]
+  },
+  "fr": {
+    "content": "contentFr",
+    "navigation": [
+      {
+        "title": "About us",
+        "url": "/about"
+      }
+    ]
+  },
+  "it": {
+    "content": "contentIt",
+    "navigation": [
+      {
+        "title": "About us",
+        "url": "/about"
+      }
+    ]
+  }
+}

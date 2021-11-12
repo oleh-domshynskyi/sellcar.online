@@ -1,0 +1,22 @@
+{
+  "en": {
+    "title": "Sell your car online",
+    "bannerImg": "/cms/hero-man.png",
+    "subtitle": "Find out in just a few minutes what your current car is worth. Trade it in directly and offset the proceeds against the purchase price of your new vehicle."
+  },
+  "de": {
+    "title": "titleDe",
+    "bannerImg": "/cms/hero-man.png",
+    "subtitle": "subtitleDe"
+  },
+  "fr": {
+    "title": "titleFR",
+    "bannerImg": "/cms/hero-man.png",
+    "subtitle": "subttileFR"
+  },
+  "it": {
+    "title": "titleIT",
+    "bannerImg": "/cms/hero-man.png",
+    "subtitle": "subtitleIt"
+  }
+}

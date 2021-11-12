@@ -1,0 +1,37 @@
+@import '@/styles/colors';
+
+.partners{
+  padding: 74px 0 85px 0;
+  background-color: rgb(232, 242, 247);
+  
+  @media screen and (min-width: 576px){
+    
+    padding: 104px 0 132px 0;
+  }
+
+  &__title{
+    h1, h2, h3{
+      text-align: center;
+      color: $primary;
+    }
+  }
+  span{
+      margin-top: 40px;
+      text-align: center;
+    img{
+      display: block;
+      margin: 0 auto;
+    }
+
+    @media screen and (min-width: 576px){
+      margin-top: 90px;
+    }
+  }
+}
+
+@media screen and (min-width: 992px){
+
+  .partners__container{
+    max-width: 980px !important;
+  }
+}

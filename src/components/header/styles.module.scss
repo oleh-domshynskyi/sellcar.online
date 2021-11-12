@@ -1,0 +1,41 @@
+@import '@/styles/colors';
+
+.header{
+   padding: 21px 0 22px;
+
+    @media (min-width: 992px) {
+        padding: 36px 0 39px;
+    }
+
+    .header--row{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav{
+
+        a{
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 500;
+            color: $primary;
+            margin-right: 22px;
+            transition: all .2s ease-in-out;
+
+            &:hover{
+                color: $accent;
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px){
+        nav{
+            a{
+                font-size: 18px;
+            }
+        }
+    }
+
+}
+
