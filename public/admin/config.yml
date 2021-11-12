@@ -4,11 +4,8 @@ backend:
   # branch: main # the main branch of our repo
   # base_url: "https://avo-web.vercel.app/" # our site's base URL 
   # auth_endpoint: "api/auth" # used together with base_url for our custom endpoints (more on this later)
-  name: github
+  name: git-gateway
   branch: main
-  repo: oleh-domshynskyi/sellcar.online
-  base_url: https://sellcar-online.vercel.app
-  auth_endpoint: api/auth
 media_folder: public/cms/
 public_folder: "/cms/"
 publish_mode: simple
