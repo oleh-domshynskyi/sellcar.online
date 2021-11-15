@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: oleh-domshynskyi/sellcar.online
+  repo: oleh-domshynskyi/sellcar.online #owner/repo name
   branch: main # Branch to update
   base_url: "https://sellcar-online.vercel.app/"
   auth_endpoint: "api/auth"
