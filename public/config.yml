@@ -40,7 +40,7 @@ collections:
         i18n: true
         file: 'public/privacy.json'
         fields:
-          - {label: "page Title", name: "pageTitle", widget: "string", i18n: true},
+          - {label: "page Title", name: "pageTitle", widget: "string", i18n: true}
           - {label: "page Meta", name: "pageMeta", widget: "text", i18n: true}
           - {label: "title", name: "title", widget: "string", i18n: true}
           - {label: "content", name: "content", widget: "markdown", i18n: true}
@@ -50,7 +50,7 @@ collections:
         i18n: true
         file: 'public/imprint.json'
         fields:
-          - {label: "page Title", name: "pageTitle", widget: "string", i18n: true},
+          - {label: "page Title", name: "pageTitle", widget: "string", i18n: true}
           - {label: "page Meta", name: "pageMeta", widget: "text", i18n: true}
           - {label: "title", name: "title", widget: "string", i18n: true}
           - {label: "content", name: "content", widget: "markdown", i18n: true}
@@ -60,7 +60,7 @@ collections:
         i18n: true
         file: 'public/aboutUs.json'
         fields:
-          - {label: "page Title", name: "pageTitle", widget: "string", i18n: true},
+          - {label: "page Title", name: "pageTitle", widget: "string", i18n: true}
           - {label: "page Meta", name: "pageMeta", widget: "text", i18n: true}
           - {label: "title", name: "title", widget: "string", i18n: true}
           - {label: "subtitle", name: "subtitle", widget: "string", i18n: true}
@@ -151,7 +151,7 @@ collections:
     extension: "json"
     format: "json"
     fields:
-        - {label: "page Title", name: "pageTitle", widget: "string", i18n: true},
+        - {label: "page Title", name: "pageTitle", widget: "string", i18n: true}
         - {label: "page Meta", name: "pageMeta", widget: "text", i18n: true}
         - {label: "Title", name: "title", widget: "string", i18n: true}
         - {label: "content", name: "content", widget: "markdown", i18n: true}
