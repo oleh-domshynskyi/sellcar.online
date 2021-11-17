@@ -9,21 +9,30 @@ import content from '@/public/settings/settings.json';
 import partners from '@/public/sections/partners.json';
 import { useState, useEffect } from 'react';
 
+export const useMousePosition = () => {
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+
+  useEffect(() => {
+    const setFromEvent = (e: any) =>
+      setPosition({ x: e.clientX, y: e.clientY });
+    window.addEventListener(`mousemove`, setFromEvent);
+
+    return () => {
+      window.removeEventListener(`mousemove`, setFromEvent);
+    };
+  }, []);
+
+  return position;
+};
+
 const Hero = ({ title, subtitle, img, partner }: HeroProps) => {
   const router = useRouter();
   const { locale } = router;
   const data: any = content;
   const partnerData: any = partners;
 
-  //Parallax
-  const [offsetY, setOffsetY] = useState(0);
-  const handleScroll = () => setOffsetY(window.pageYOffset);
-
-  useEffect(() => {
-    window.addEventListener(`scroll`, handleScroll);
-
-    return () => window.removeEventListener(`scroll`, handleScroll);
-  }, []);
+  // const position = useMousePosition();
+  const position = { x: 0, y: 0 };
 
   return (
     <>
@@ -60,8 +69,8 @@ const Hero = ({ title, subtitle, img, partner }: HeroProps) => {
                   styles[`hero__blue-circle`],
                 )}
                 style={{
-                  transform: `translate(-${offsetY * 0.1}px, ${
-                    offsetY * 0.2
+                  transform: `translate(-${position.x * 0.05}px, ${
+                    position.y * 0.05
                   }px)`,
                 }}
               ></span>
@@ -71,8 +80,8 @@ const Hero = ({ title, subtitle, img, partner }: HeroProps) => {
                   styles[`hero__red-circle`],
                 )}
                 style={{
-                  transform: `translate(-${offsetY * 0.1}px, -${
-                    offsetY * 0.2
+                  transform: `translate(-${position.x * 0.05}px, -${
+                    position.y * 0.05
                   }px)`,
                 }}
               ></span>

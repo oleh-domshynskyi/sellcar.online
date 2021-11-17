@@ -7,19 +7,29 @@ import content from '@/public/aboutUs.json';
 import classNames from 'classnames';
 import styles from '../styles/about.module.scss';
 
+export const useMousePosition = () => {
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+
+  useEffect(() => {
+    const setFromEvent = (e: any) =>
+      setPosition({ x: e.clientX, y: e.clientY });
+    window.addEventListener(`mousemove`, setFromEvent);
+
+    return () => {
+      window.removeEventListener(`mousemove`, setFromEvent);
+    };
+  }, []);
+
+  return position;
+};
+
 export default function Privacy() {
   const router = useRouter();
   const { locale } = router;
   const data: any = content;
 
-  const [offsetY, setOffsetY] = useState(0);
-  const handleScroll = () => setOffsetY(window.pageYOffset);
-
-  useEffect(() => {
-    window.addEventListener(`scroll`, handleScroll);
-
-    return () => window.removeEventListener(`scroll`, handleScroll);
-  }, []);
+  // const position = useMousePosition();
+  const position = { x: 0, y: 0 };
 
   return (
     <MainLayout>
@@ -30,18 +40,22 @@ export default function Privacy() {
         <div
           className={classNames(`circle circle--blue`, styles.circleBlue)}
           style={{
-            transform: `translate(-${offsetY * 0.15}px, ${offsetY * 0.5}px)`,
+            transform: `translate(-${position.x * 0.05}px, ${
+              position.y * 0.05
+            }px)`,
           }}
         ></div>
         <div
           className={classNames(`circle circle--red`, styles.circleRedRight)}
           style={{
-            transform: `translate(-${offsetY * 0.07}px, ${offsetY * 0.2}px)`,
+            transform: `translate(-${position.x * 0.05}px, ${
+              position.y * 0.05
+            }px)`,
           }}
         ></div>
         <div
           className={classNames(`circle circle--red`, styles.circleRedLeft)}
-          style={{ transform: `translateX(${offsetY * 0.3}px)` }}
+          style={{ transform: `translateX(${position.x * 0.05}px)` }}
         ></div>
         <div className="container">
           <div className="row">
