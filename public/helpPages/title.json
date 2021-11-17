@@ -1,18 +1,26 @@
 {
   "en": {
     "title": "title",
-    "content": "# title"
+    "content": "# title",
+    "pageTitle": "pageTitle",
+    "pageMeta": "meta"
   },
   "de": {
     "title": "titleDe",
-    "content": "# contentDe"
+    "content": "# contentDe",
+    "pageTitle": "pageTitleDe",
+    "pageMeta": "metaDe"
   },
   "fr": {
     "title": "titleFr",
-    "content": "# contentFr"
+    "content": "# contentFr",
+    "pageTitle": "pageTitleFr",
+    "pageMeta": "metaFr"
   },
   "it": {
     "title": "titleIt",
-    "content": "# contentFr"
+    "content": "# contentFr",
+    "pageTitle": "pageTitleIt",
+    "pageMeta": "metaIt"
   }
 }
