@@ -74,7 +74,7 @@ collections:
           - {label: 'title', name: 'title', widget: 'string', i18n: true}
           - {label: 'accordions', name: 'accordions', widget: 'list', create: true, i18n: true, fields: [
             {label: 'title', name: 'title', widget: 'string', create: true, i18n: true},
-            {label: 'description', name: 'description', widget: 'string', create: true, i18n: true}]}
+            {label: 'description', name: 'description', widget: 'text', create: true, i18n: true}]}
       - label: 'Partners'
         name: 'partners'
         create: true
