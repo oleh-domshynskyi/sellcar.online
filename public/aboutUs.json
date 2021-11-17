@@ -3,24 +3,32 @@
     "content": "### How did autoverkaufen come about\n\n“It is not the strongest species that survives, nor the most intelligent, but the one that is most adaptable to change.” We have taken advantage of this principle for CAROUTLET and are leaving the classic path of buying and selling vehicles. The purchasing behaviour of the end customer has changed enormously in recent years. The Corona crisis accelerated digitalisation by several years. CAROUTLET was conceived 2020 on the basis of this initial situation.\n\n### Going new ways\n\nEasy availability and price awareness coupled with security and trust must be combined into one service. Only as much as necessary and as cheap as possible. That is the motto of CAROUTLET. At CAROUTLET we launch a needs-oriented online purchase with maximum security and transparency. You determine the services including the “degree of finish” of your car and therefore directly the price. All from one source. We are not an offer platform - we are an ALL in ONE service provider.\n\n### Meeting the new purchasing behaviour\n\nWith CAROUTLET we are breaking new ground in car sales. The ALL in ONE solution will replace conventional advertising platforms in the near future. Regardless of the understanding, the car can be bought 100% online from the comfort of your own home.\n\n### What we want to achieve\n\nWe do not claim to change everything, we want to give the change the opportunity to unfold.",
     "title": "People who want to make a difference",
     "subtitle": "Autoverkaugen was designed and launched by \"brains\" from the digital world and the automotive industry. This interaction enables us to break new ground and build on an existing set-up.",
-    "bannerImg": "/cms/about-banner.png"
+    "bannerImg": "/cms/about-banner.png",
+    "pageTitle": "pageTitle",
+    "pageMeta": "meta"
   },
   "de": {
     "content": "content",
     "title": "title",
     "subtitle": "subtitle",
-    "bannerImg": "/cms/about-banner.png"
+    "bannerImg": "/cms/about-banner.png",
+    "pageTitle": "pageTitleDe",
+    "pageMeta": "metaDe"
   },
   "fr": {
     "content": "content",
     "title": "title",
     "subtitle": "subtitle",
-    "bannerImg": "/cms/about-banner.png"
+    "bannerImg": "/cms/about-banner.png",
+    "pageTitle": "pageTitleFr",
+    "pageMeta": "metaFr"
   },
   "it": {
     "content": "content",
     "title": "title",
     "subtitle": "subtitle",
-    "bannerImg": "/cms/about-banner.png"
+    "bannerImg": "/cms/about-banner.png",
+    "pageTitle": "pageTitleIt",
+    "pageMeta": "metaIt"
   }
 }
