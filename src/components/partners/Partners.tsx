@@ -6,7 +6,7 @@ const Partners = ({ data, title }: PartnerProps) => {
   return (
     <section className={styles.partners}>
       <div className="container">
-        <div className="row">
+        <div className="row justify-content-center">
           <div className={styles[`partners__title`]}>
             <Title as="h2">{title}</Title>
           </div>

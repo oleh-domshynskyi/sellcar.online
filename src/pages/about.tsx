@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import Head from 'next/head';
 import MainLayout from '@/containers/mainLayout/index';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
@@ -33,6 +34,10 @@ export default function Privacy() {
 
   return (
     <MainLayout>
+      <Head>
+        <title>{data[locale!].pageTitle}</title>
+        <meta name="description" content={data[locale!].pageMeta}></meta>
+      </Head>
       <div
         className={styles.banner}
         style={{ backgroundImage: `url('${data[locale!].bannerImg}')` }}

@@ -3,7 +3,6 @@ import Head from 'next/head';
 import LangSwitch from '@/components/lang-switch/LangSwitch';
 import Logo from '@/components/logo/Logo';
 import styles from './styles.module.scss';
-import classNames from 'classnames';
 
 export default function Header() {
   return (

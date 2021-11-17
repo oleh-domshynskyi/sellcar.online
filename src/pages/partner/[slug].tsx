@@ -3,15 +3,14 @@ import { InferGetServerSidePropsType } from 'next';
 
 export async function getServerSideProps(context: any) {
   const { slug } = context.query;
-  const { defaultLocale } = context;
-  const partners = await import(`@/public/sections/partners.json`);
+  const partners = await import(`@/public/partners.json`);
   const partnersData: any = partners;
 
   const partner = slug;
 
   const getImageIdx = (partnerName: any) => {
     if (partner) {
-      return partnersData[defaultLocale!].images.findIndex(
+      return partnersData.images.findIndex(
         (el: any) => el.name === partnerName,
       );
     } else return undefined;
@@ -19,7 +18,7 @@ export async function getServerSideProps(context: any) {
 
   const getImage = () => {
     if (partner && getImageIdx(partner) > -1) {
-      return partnersData[defaultLocale!].images[getImageIdx(partner)].img;
+      return partnersData.images[getImageIdx(partner)].img;
     } else return undefined;
   };
 

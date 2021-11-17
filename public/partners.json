@@ -1,0 +1,12 @@
+{
+    "images": [
+        {
+            "name": "tesla",
+            "img": "/cms/tesla.svg"
+        },
+        {
+            "name": "genesis",
+            "img": "/cms/genesis.svg"
+        }
+    ]
+  }

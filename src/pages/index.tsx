@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router';
 import Script from 'next/script';
+import Head from 'next/head';
 import Partners from '@/components/partners/Partners';
 import MainLayout from '@/containers/mainLayout/index';
 import Icons from '@/components/icons/Icons';
@@ -23,6 +24,10 @@ export default function Home(partner: any) {
 
   return (
     <MainLayout>
+      <Head>
+        <title>{homeData[locale!].pageTitle}</title>
+        <meta name="description" content={homeData[locale!].pageMeta}></meta>
+      </Head>
       <Script src="https://cadirect-widget.netlify.app/cadwidget-v1.0.js" />
       <Hero
         title={homeData[locale!].title}

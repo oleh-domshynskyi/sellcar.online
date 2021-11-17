@@ -18,12 +18,13 @@
         font-size: 16px;
         line-height: 24px;
         font-weight: 400;
-        margin-bottom: 38px !important;
+        margin-bottom: 36px !important;
         color: $greyDark;
 
         @media (min-width: 768px) {
             font-size: 18px;
             line-height: 28px;
+            margin-bottom: 44px !important;
         }
 
         @media (min-width: 992px) {
@@ -34,10 +35,15 @@
         @media (min-width: 1200px) {
             font-size: 21px;
             line-height: 32px;
+            margin-bottom: 50px !important;
+        }
+
+        @media (min-width: 1440px) {
+            margin-bottom: 58px !important;
         }
 
         &:last-child {
-            margin-bottom: 0 !important;
+          margin-bottom: 0 !important;
         }
     }
 
@@ -74,6 +80,18 @@
         font-weight: 700;
         margin-bottom: 19px !important;
         color: $greyDark;
+
+        @media (min-width: 768px) {
+            margin-bottom: 22px !important;
+        }
+
+        @media (min-width: 1200px) {
+            margin-bottom: 25px !important;
+        }
+
+        @media (min-width: 1440px) {
+            margin-bottom: 27px !important;
+        }
     }
 
     h1 {

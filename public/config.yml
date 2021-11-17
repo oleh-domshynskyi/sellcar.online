@@ -29,6 +29,8 @@ collections:
         i18n: true
         file: 'public/home.json'
         fields:
+          - {label: "page Title", name: "pageTitle", widget: "string", i18n: true}
+          - {label: "page Meta", name: "pageMeta", widget: "text", i18n: true}
           - {label: "title", name: "title", widget: "string", i18n: true}
           - {label: "subtitle", name: "subtitle", widget: "string", i18n: true}
           - {label: "banner image", name: "bannerImg", widget: "image"}
@@ -38,6 +40,8 @@ collections:
         i18n: true
         file: 'public/privacy.json'
         fields:
+          - {label: "page Title", name: "pageTitle", widget: "string", i18n: true},
+          - {label: "page Meta", name: "pageMeta", widget: "text", i18n: true}
           - {label: "title", name: "title", widget: "string", i18n: true}
           - {label: "content", name: "content", widget: "markdown", i18n: true}
       - label: 'Imprint'
@@ -46,6 +50,8 @@ collections:
         i18n: true
         file: 'public/imprint.json'
         fields:
+          - {label: "page Title", name: "pageTitle", widget: "string", i18n: true},
+          - {label: "page Meta", name: "pageMeta", widget: "text", i18n: true}
           - {label: "title", name: "title", widget: "string", i18n: true}
           - {label: "content", name: "content", widget: "markdown", i18n: true}
       - label: 'About us'
@@ -54,6 +60,8 @@ collections:
         i18n: true
         file: 'public/aboutUs.json'
         fields:
+          - {label: "page Title", name: "pageTitle", widget: "string", i18n: true},
+          - {label: "page Meta", name: "pageMeta", widget: "text", i18n: true}
           - {label: "title", name: "title", widget: "string", i18n: true}
           - {label: "subtitle", name: "subtitle", widget: "string", i18n: true}
           - {label: "banner image", name: "bannerImg", widget: "image", i18n: "duplicate"}
@@ -143,5 +151,21 @@ collections:
     extension: "json"
     format: "json"
     fields:
+        - {label: "page Title", name: "pageTitle", widget: "string", i18n: true},
+        - {label: "page Meta", name: "pageMeta", widget: "text", i18n: true}
         - {label: "Title", name: "title", widget: "string", i18n: true}
         - {label: "content", name: "content", widget: "markdown", i18n: true}
+  - name: "partners" 
+    label: "Partners" 
+    create: true
+    files:
+      - label: 'partners'
+        name: 'partners'
+        create: true
+        i18n: true
+        file: 'public/partners.json'
+        fields:
+          - {label: "images", name: "images", widget: "list", fields: [
+            {label: 'name', name: 'name', widget: 'string'},
+            {label: 'image', name: 'img', widget: 'image'}]}
+         
